@@ -5,7 +5,7 @@ import { Alert, Box, Stack } from '@mui/material'
 import { download } from "@/redux/thunks/download";
 import { addSource, updatePayload } from "@/redux/slices/download"
 import SearchBox from '@/components/SearchBox'
-import MediaCard from '@/components/mediaCard';
+import MediaCard from '@/components/MediaCard';
 
 
 const Page = () => {

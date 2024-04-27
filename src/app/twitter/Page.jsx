@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { Alert, Box, Stack } from '@mui/material';
-import { updatePayload, addSource } from '@/redux/slices/download';
+import { addSource, updatePayload } from '@/redux/slices/download';
 import { download } from '@/redux/thunks/download';
 import SearchBox from '@/components/SearchBox';
 import MediaCard from '@/components/MediaCard';
 
-const page = () => {
+const Page = () => {
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState("");
@@ -18,7 +18,7 @@ const page = () => {
       setError(null)
       const url = new URL(search);
       if (!url || search.trim().length === 0) return setError("Please Provide Valid URL")
-      dispatch(addSource('instagram'));
+      dispatch(addSource('twitter'));
       dispatch(download({ url: search.trim() }));
     } catch (err) {
       return setError("Please Provide Valid URL")
@@ -33,7 +33,7 @@ const page = () => {
   }, [])
 
   return (
-    <Box component="div" className='instagram'>
+    <Box component="div" className='twitter'>
       {error && <Alert severity="error">{error}</Alert>}
       <Stack
         direction="row"
@@ -47,12 +47,12 @@ const page = () => {
         direction="row"
         justifyContent="center"
         style={{ width: "100%", marginTop: "2%" }}
-        className='media-div instagram'
+        className='media-div twitter'
       >
-        <MediaCard from={"instagram"} />
+        <MediaCard from={"twitter"} />
       </Stack>
     </Box>
   )
 }
 
-export default page
+export default Page

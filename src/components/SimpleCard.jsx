@@ -1,9 +1,6 @@
 import * as React from 'react';
 import Image from 'next/image'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
+import { CardContent, Typography, Box, Card } from '@mui/material';
 
 export default function SimpleCard({ img, title, description, imgWidth = "50%" }) {
     return (

@@ -7,7 +7,7 @@ import videoImg from "@/assets/images/video.png";
 import reelsImg from "@/assets/images/reels.png";
 import storyImg from "@/assets/images/story.png";
 
-const Page = () => {
+export default function Page() {
 
     return (
         <Box component="div">
@@ -45,5 +45,3 @@ const Page = () => {
         </Box>
     )
 }
-
-export default Page

@@ -10,7 +10,7 @@ import hd from "@/assets/images/hd.png";
 import XCard from '@/components/XCard';
 import Footer from '@/components/Footer';
 
-const Page = () => {
+export default function Page() {
   return (
     <Box component="div" className='home-div'>
       <Box component="div">
@@ -39,7 +39,7 @@ const Page = () => {
           advanced features such as scheduling downloads for specific times or automatically converting downloaded videos to preferred formats contribute to a
           more streamlined and personalized experience.
         </Typography>
-        <Typography mt={2}>
+        <Typography >
           However, it's essential for users to exercise caution and respect copyright laws when using media downloader tools. While these tools facilitate
           access to content for personal use, downloading copyrighted material without permission may infringe upon the rights of content creators and
           owners. Therefore, it's advisable to use media downloader tools responsibly and only download content for which you have the necessary rights
@@ -69,9 +69,7 @@ const Page = () => {
         <InstaCard />
         <XCard />
       </Box>
-      <Box component='div' sx={{ backgroundColor: '#77B0AA', padding:'2px',textAlign:'center' }} ><Footer /></Box>
+      <Box component='div' sx={{ backgroundColor: '#77B0AA', padding: '2px', textAlign: 'center' }} ><Footer /></Box>
     </Box>
   )
 }
-
-export default Page

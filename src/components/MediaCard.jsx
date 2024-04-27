@@ -7,7 +7,7 @@ import { red } from '@mui/material/colors';
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import MediaSkeleton from './MediaSkeleton';
 
-const MediaCard = ({from}) => {
+export default function MediaCard({ from }) {
 
     const downloadData = useSelector((state) => state.download.payload);
     const downloadRequesting = useSelector((state) => state.download.isRequesting);
@@ -82,5 +82,3 @@ const MediaCard = ({from}) => {
         </Box>
     )
 }
-
-export default MediaCard

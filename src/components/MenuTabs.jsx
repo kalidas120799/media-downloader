@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation'
 import { Tab, Tabs } from '@mui/material';
 
-const MenuTabs = (props) => {
+export default function MenuTabs(props) {
     const { from, tabs, defaultTab } = props;
     const router = useRouter();
     const param = useParams();
@@ -37,5 +37,3 @@ const MenuTabs = (props) => {
         </Tabs>
     )
 }
-
-export default MenuTabs

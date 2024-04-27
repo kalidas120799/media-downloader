@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Card, Skeleton } from '@mui/material';
 
-const MediaSkeleton = () => {
+export default function MediaSkeleton() {
     return (
         <Card className='media-div-card' sx={{ maxWidth: "750px", padding: "5px" }} >
             <Box component="div" sx={{ display: "flex", width: "100%" }}>
@@ -12,5 +12,3 @@ const MediaSkeleton = () => {
         </Card>
     )
 }
-
-export default MediaSkeleton

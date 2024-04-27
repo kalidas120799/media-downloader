@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { dataFound, dataNotFound, exception } from "../helpers/api-result";
-import webAgent from "../helpers/web-agent";
+import { webAgent } from "../helpers/web-agent";
 
 
 export const POST = async (request) => {

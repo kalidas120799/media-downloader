@@ -6,4 +6,4 @@ axios.defaults.headers = {
     'X-RapidAPI-Host': process.env.RAPID_API_HOST
 }
 
-export default axios;
+export const webAgent = axios;

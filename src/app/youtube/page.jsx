@@ -8,7 +8,7 @@ import SearchBox from '@/components/SearchBox'
 import MediaCard from '@/components/MediaCard';
 
 
-const Page = () => {
+export default function Page() {
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState("");
@@ -55,5 +55,3 @@ const Page = () => {
     </Box>
   )
 }
-
-export default Page

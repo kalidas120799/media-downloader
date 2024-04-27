@@ -14,7 +14,7 @@ const navItems = [
     { label: "Twitter", href: "/twitter" }
 ];
 
-function DrawerAppBar(props) {
+export default function Header(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -87,5 +87,3 @@ function DrawerAppBar(props) {
         </Box>
     );
 }
-
-export default DrawerAppBar;

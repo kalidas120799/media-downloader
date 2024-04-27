@@ -1,0 +1,48 @@
+.home-div {
+    p {
+        margin-top: 10px;
+    }
+}
+
+.choose-div {
+    margin-top: 20px;
+    background-color: #77B0AA;
+    padding: 10px 0px;
+
+    .choose-grid {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .choose-grid-item {
+        padding: 16px 0px 0px 0px !important;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.full-width-card {
+    display: flex;
+    margin-bottom: 10px;
+
+    .card-img img {
+        width: 100px;
+        height: auto;
+    }
+
+    .card-img,
+    .card-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width:579px) {
+    .full-width-card {
+        display: block;
+    }
+
+    .card-img {
+        text-align: center;
+    }
+}

@@ -40,7 +40,7 @@ export default function Page() {
         justifyContent="center"
         style={{ width: "100%", marginTop: "2%" }}
       >
-        <SearchBox search={search} setSearch={setSearch} handleDownload={handleDownload} />
+        <SearchBox from='twitter' search={search} setSearch={setSearch} handleDownload={handleDownload} />
 
       </Stack>
       <Stack
